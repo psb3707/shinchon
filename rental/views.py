@@ -37,7 +37,7 @@ def get_create_delete_rentalform(request):
         rental_form = RentalForm.objects.get(orderNumber=query)
         rental_form.delete()
 
-        return Response('해당하는 대여 신청이 삭제되었습니다.',status=status.HTTP_204_NO_CONTENT)
+        return Response('해당하는 대여 신청이 삭제되었습니다.',status=status.HTTP_200_OK)
 
 
     
